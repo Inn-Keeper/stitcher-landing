@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Stitcher turns your photos into one continuous, swipeable Instagram story."
+    />
+    <title>Stitcher — Your photos. One continuous story.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow--pink"></div>
+    <div class="page-glow page-glow--blue"></div>
+
+    <header class="site-header container">
+      <a class="brand" href="#top" aria-label="Stitcher home">
+        <svg class="brand-mark" viewBox="0 0 1024 1024" aria-hidden="true">
+          <path class="mark-trail" d="M824 307V824M307 824H824" />
+          <rect class="mark-frame" x="272" y="272" width="480" height="480" rx="58" />
+          <path class="mark-s" d="M625 402H480c-54 0-54 92 0 92h94c54 0 54 92 0 92H399" />
+        </svg>
+        <span>Stitcher</span>
+      </a>
+
+      <a class="text-link" href="https://stitcher-web.vercel.app/">Try Stitcher <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Made for the swipe</p>
+          <h1>Your photos.<br /><em>One continuous</em> story.</h1>
+          <p class="hero-lede">
+            Turn a set of photos into an Instagram carousel that flows from one frame to the next.
+          </p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="https://stitcher-web.vercel.app/">Try Stitcher <span aria-hidden="true">→</span></a>
+            <a class="button button--quiet" href="#flow">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-note">Local-first editing. No account required.</p>
+        </div>
+
+        <div class="hero-art" aria-label="A continuous mountain panorama separated into carousel tiles" role="img">
+          <div class="art-orbit art-orbit--one"></div>
+          <div class="art-orbit art-orbit--two"></div>
+          <div class="art-card art-card--back"></div>
+          <div class="art-card art-card--middle"></div>
+          <div class="art-card art-card--front">
+            <div class="art-sky">
+              <span class="art-sun"></span>
+              <span class="art-cloud art-cloud--one"></span>
+              <span class="art-cloud art-cloud--two"></span>
+            </div>
+            <div class="art-ridge art-ridge--far"></div>
+            <div class="art-ridge art-ridge--near"></div>
+            <div class="art-water"></div>
+            <div class="art-slices" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="art-caption"><span class="art-caption-dot"></span> Alpine morning <span>05 tiles</span></div>
+        </div>
+      </section>
+
+      <section class="proof container" aria-label="Stitcher benefits">
+        <div><strong>4–20</strong><span>carousel tiles</span></div>
+        <div><strong>4:5</strong><span>Instagram-ready</span></div>
+        <div><strong>100%</strong><span>your composition</span></div>
+      </section>
+
+      <section class="flow-section container" id="flow">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> From photos to post</p>
+          <h2>One flow. <em>Zero guesswork.</em></h2>
+          <p>Build the panorama, inspect every seam, then export the finished sequence in the right order.</p>
+        </div>
+
+        <div class="walkthrough" data-walkthrough data-stage="gallery">
+          <div class="walkthrough-topbar">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="window-address">stitcher / alpine-morning</span>
+            <span class="window-status"><i></i> Live</span>
+          </div>
+
+          <div class="walkthrough-canvas">
+            <div class="stage stage--gallery" aria-hidden="true">
+              <div class="app-bar"><span class="app-title">My Stitches</span><span class="app-add">+</span></div>
+              <div class="gallery-grid">
+                <div class="gallery-new"><b>+</b><span>New Stitch</span></div>
+                <div class="gallery-card-mini gallery-card-mini--alpine"><span>Alpine Morning</span><small>05 TILES</small></div>
+                <div class="gallery-card-mini gallery-card-mini--coast"><span>Coastline</span><small>08 TILES</small></div>
+                <div class="gallery-card-mini gallery-card-mini--dusk"><span>Afterglow</span><small>06 TILES</small></div>
+              </div>
+              <div class="app-nav"><span class="is-current">Library</span><span>Create</span><span>Profile</span></div>
+            </div>
+
+            <div class="stage stage--editor" aria-hidden="true">
+              <div class="editor-toolbar"><span>‹ Back</span><strong>Alpine Morning</strong><span>Export</span></div>
+              <div class="editor-stage">
+                <div class="editor-image"><div class="editor-sun"></div><i></i><i></i><i></i><i></i></div>
+                <div class="editor-lines"><i></i><i></i><i></i><i></i></div>
+                <span class="editor-handle editor-handle--one"></span><span class="editor-handle editor-handle--two"></span>
+              </div>
+              <div class="editor-controls"><span class="selected">Canvas</span><span>Swipe deck</span><span>5 tiles</span></div>
+              <div class="editor-thumbs"><i></i><i></i><i></i></div>
+            </div>
+
+            <div class="stage stage--preview" aria-hidden="true">
+              <div class="preview-head"><span>‹</span><strong>Preview</strong><span>···</span></div>
+              <div class="preview-phone">
+                <div class="preview-image"><i></i><i></i><i></i><i></i><i></i><span class="preview-sun"></span></div>
+                <div class="preview-dots"><b></b><b></b><b class="is-on"></b><b></b><b></b></div>
+                <div class="preview-copy"><strong>alpine.morning</strong><span>See the whole story →</span></div>
+              </div>
+              <span class="preview-hint">Swipe to test the flow</span>
+            </div>
+
+            <div class="stage stage--export" aria-hidden="true">
+              <div class="export-success"><span class="export-check">✓</span><h3>Your stitch is ready.</h3><p>Five tiles, lined up for a seamless swipe.</p></div>
+              <div class="export-tiles"><i>01</i><i>02</i><i>03</i><i>04</i><i>05</i></div>
+              <div class="export-action">Save to photos <span>↓</span></div>
+              <small>Post Tile 01 → 05 in that order.</small>
+            </div>
+          </div>
+
+          <div class="walkthrough-footer">
+            <div class="walkthrough-controls" aria-label="Product walkthrough stages">
+              <button class="walkthrough-step" type="button" data-stage="gallery" aria-current="step"><b>01</b> Gallery</button>
+              <button class="walkthrough-step" type="button" data-stage="editor" aria-current="false"><b>02</b> Editor</button>
+              <button class="walkthrough-step" type="button" data-stage="preview" aria-current="false"><b>03</b> Preview</button>
+              <button class="walkthrough-step" type="button" data-stage="export" aria-current="false"><b>04</b> Export</button>
+            </div>
+            <span class="walkthrough-play"><i></i> Playing</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps container">
+        <article class="step-card"><span class="step-number">01</span><div class="step-icon step-icon--photos"><i></i><i></i><i></i></div><h3>Bring your photos together.</h3><p>Import a set, arrange each image freely, and let the composition become one wide scene.</p></article>
+        <article class="step-card"><span class="step-number">02</span><div class="step-icon step-icon--cut"><i></i><i></i><i></i></div><h3>Place every cut with intent.</h3><p>Slide the grid across your image until every frame feels good on its own and in motion.</p></article>
+        <article class="step-card"><span class="step-number">03</span><div class="step-icon step-icon--export"><i>↓</i></div><h3>Share a story that flows.</h3><p>Export Instagram-ready 4:5 tiles, already ordered for a seamless carousel post.</p></article>
+      </section>
+
+      <section class="features container">
+        <p class="eyebrow"><span></span> Built around your work</p>
+        <div class="features-grid">
+          <article><span class="feature-icon">◎</span><h3>Local by default</h3><p>Your work stays on your device. Make something without signing in.</p></article>
+          <article><span class="feature-icon">↗</span><h3>Full-resolution export</h3><p>Your original detail carries through to every finished carousel tile.</p></article>
+          <article><span class="feature-icon">✦</span><h3>Backup when you want it</h3><p>Optional cloud sync keeps the stitches you care about close at hand.</p></article>
+        </div>
+      </section>
+
+      <section class="final-cta container">
+        <div class="final-cta-art" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div>
+          <p class="eyebrow"><span></span> Ready when inspiration is</p>
+          <h2>Make your next<br /><em>swipe worth it.</em></h2>
+        </div>
+        <a class="button button--primary" href="https://stitcher-web.vercel.app/">Try Stitcher <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand" href="#top" aria-label="Stitcher home">
+        <svg class="brand-mark" viewBox="0 0 1024 1024" aria-hidden="true"><path class="mark-trail" d="M824 307V824M307 824H824" /><rect class="mark-frame" x="272" y="272" width="480" height="480" rx="58" /><path class="mark-s" d="M625 402H480c-54 0-54 92 0 92h94c54 0 54 92 0 92H399" /></svg>
+        <span>Stitcher</span>
+      </a>
+      <p>Made for stories that move.</p>
+      <a href="https://stitcher-web.vercel.app/">Open live demo <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>
