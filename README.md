@@ -8,6 +8,8 @@ The page introduces the Gallery → Editor → Preview → Export flow with a
 lightweight HTML/CSS/JavaScript walkthrough. It uses Stitcher's dark editorial
 visual language and directs visitors to the live demo.
 
+![Five carousel tiles forming one alpine sunrise panorama](./og-image.png)
+
 ## Run locally
 
 There is no package manager or build step. Serve the project root with any
