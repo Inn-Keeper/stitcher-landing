@@ -1,8 +1,8 @@
-# Stitcher Landing Page Implementation Plan
+# Stretchy Landing Page Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build a responsive static landing page that presents Stitcher’s carousel workflow and directs visitors to the live demo.
+**Goal:** Build a responsive static landing page that presents Stretchy’s carousel workflow and directs visitors to the live demo.
 
 **Architecture:** A semantic HTML document supplies the product content and accessible walkthrough structure. CSS owns the visual system, responsive layout, and visual transition states; a small browser script progresses the walkthrough when motion is permitted. A Node built-in test asserts the critical static contract without adding a dependency.
 
@@ -11,8 +11,8 @@
 ## Global Constraints
 
 - Use only `index.html`, `styles.css`, `main.js`, and one Node built-in test file; add no package or framework.
-- The primary CTA text is exactly `Try Stitcher` and links to `https://stitcher-web.vercel.app/` in the same tab.
-- Use the Stitcher dark editorial identity and reserve the pink-violet-blue gradient for identity and primary actions.
+- The primary CTA text is exactly `Try Stretchy` and links to `https://stretchy-web.vercel.app/` in the same tab.
+- Use the Stretchy dark editorial identity and reserve the pink-violet-blue gradient for identity and primary actions.
 - Implement the Gallery → Editor → Preview → Export walkthrough with real HTML, CSS, and JavaScript.
 - Do not animate when `prefers-reduced-motion: reduce` is active.
 - Include Vercel’s native static-site analytics initializer and `/_vercel/insights/script.js` script; Analytics must be enabled in the Vercel dashboard after deployment.
@@ -47,8 +47,8 @@ const css = readFileSync(new URL("../styles.css", import.meta.url), "utf8");
 const js = readFileSync(new URL("../main.js", import.meta.url), "utf8");
 
 test("landing page keeps its product contract", () => {
-  assert.match(html, /href="https:\/\/stitcher-web\.vercel\.app\/"/);
-  assert.match(html, />Try Stitcher</);
+  assert.match(html, /href="https:\/\/stretchy-web\.vercel\.app\/"/);
+  assert.match(html, />Try Stretchy</);
   assert.match(html, /data-walkthrough/);
   assert.match(html, /Gallery/);
   assert.match(html, /Editor/);
@@ -79,10 +79,10 @@ Create `index.html` with a semantic header, hero, walkthrough, steps, feature st
 <script defer src="main.js"></script>
 ```
 
-Use `data-walkthrough data-stage="gallery"` on the walkthrough root and four `.walkthrough-step` buttons with `data-stage` values `gallery`, `editor`, `preview`, and `export`. Add a `Try Stitcher` anchor in both CTA locations:
+Use `data-walkthrough data-stage="gallery"` on the walkthrough root and four `.walkthrough-step` buttons with `data-stage` values `gallery`, `editor`, `preview`, and `export`. Add a `Try Stretchy` anchor in both CTA locations:
 
 ```html
-<a class="button button--primary" href="https://stitcher-web.vercel.app/">Try Stitcher</a>
+<a class="button button--primary" href="https://stretchy-web.vercel.app/">Try Stretchy</a>
 ```
 
 Create `styles.css` with root tokens matching the product (`#08080b` base, `#ff5c9a`, `#a06bff`, `#5ba8ff`, and `#ffd27d` warm accent), a responsive layout, focus-visible outlines, and a walkthrough whose child panels transition based on `[data-stage="..."]`. Include this motion stop:
@@ -139,4 +139,4 @@ Expected: a static server serves the page at `http://localhost:4173`; inspect de
 
 - [ ] **Step 6: Record the repository limitation**
 
-Do not commit: `stitcher-landing` has no `.git` directory. Leave the completed files present and report that a commit can be made after the user initializes or supplies a repository.
+Do not commit without separate authorization.

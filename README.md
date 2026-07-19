@@ -1,11 +1,11 @@
-# Stitcher Landing Page
+# Stretchy Landing Page
 
-The product landing page for [Stitcher](https://stitcher-web.vercel.app/), a
+The product landing page for [Stretchy](https://stretchy-web.vercel.app/), a
 local-first editor for turning photos into seamless, swipeable Instagram
 carousels.
 
 The page introduces the Gallery → Editor → Preview → Export flow with a
-lightweight HTML/CSS/JavaScript walkthrough. It uses Stitcher's dark editorial
+lightweight HTML/CSS/JavaScript walkthrough. It uses Stretchy's dark editorial
 visual language and directs visitors to the live demo.
 
 ![Five carousel tiles forming one alpine sunrise panorama](./og-image.png)

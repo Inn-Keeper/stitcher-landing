@@ -1,16 +1,16 @@
-# Stitcher landing page design
+# Stretchy landing page design
 
 ## Purpose
 
-Create a standalone, product-led landing page for Stitcher. It introduces the
+Create a standalone, product-led landing page for Stretchy. It introduces the
 app as a way to turn photos into one continuous, swipeable Instagram carousel
 and sends visitors to the live demo.
 
 ## Audience and primary action
 
 The page speaks to creators who want a polished carousel from a group of
-photos. Its primary action is **Try Stitcher**, linking to
-`https://stitcher-web.vercel.app/`. The page does not position itself as a
+photos. Its primary action is **Try Stretchy**, linking to
+`https://stretchy-web.vercel.app/`. The page does not position itself as a
 portfolio case study.
 
 ## Visual direction
@@ -18,12 +18,12 @@ portfolio case study.
 Match the product identity without copying the application shell: deep
 charcoal backgrounds, translucent dark panels, muted borders, generous rounded
 corners, an editorial display type treatment, and the pink-violet-blue
-gradient only for identity and primary actions. The Stitcher mark is used in
+gradient only for identity and primary actions. The Stretchy mark is used in
 the header and footer.
 
 ## Page structure
 
-1. A compact header with the mark, product name, and a Try Stitcher link.
+1. A compact header with the mark, product name, and a Try Stretchy link.
 2. A hero with the headline “Your photos. One continuous story.”, supporting
    copy, a primary CTA, and a visual panorama composition.
 3. An auto-playing product walkthrough that shows Gallery, Editor, Preview,

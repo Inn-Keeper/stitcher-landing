@@ -10,8 +10,9 @@ const favicon = readFileSync(new URL("../favicon.svg", import.meta.url), "utf8")
 const readme = readFileSync(new URL("../README.md", import.meta.url), "utf8");
 
 test("landing page keeps its product contract", () => {
-  assert.match(html, /href="https:\/\/stitcher-web\.vercel\.app\/"/);
-  assert.match(html, />Try Stitcher(?:\s|<)/);
+  assert.match(html, /href="https:\/\/stretchy-web\.vercel\.app\/"/);
+  assert.match(html, />Try Stretchy(?:\s|<)/);
+  assert.doesNotMatch(html, /Stitcher/);
   assert.match(html, /data-walkthrough/);
   assert.match(html, /Gallery/);
   assert.match(html, /Editor/);
